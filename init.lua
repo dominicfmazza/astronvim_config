@@ -47,6 +47,7 @@ local config = {
                         spell = false, -- sets vim.opt.spell
                         signcolumn = "auto", -- sets vim.opt.signcolumn to auto
                         wrap = false, -- sets vim.opt.wrap
+                        shell = "/opt/homebrew/bin/fish",
                 },
                 g = {
                         mapleader = " ", -- sets vim.g.mapleader
@@ -71,17 +72,16 @@ local config = {
 
         -- Set dashboard header
         header = {
-                " █████  ███████ ████████ ██████   ██████",
-                "██   ██ ██         ██    ██   ██ ██    ██",
-                "███████ ███████    ██    ██████  ██    ██",
-                "██   ██      ██    ██    ██   ██ ██    ██",
-                "██   ██ ███████    ██    ██   ██  ██████",
-                " ",
-                "    ███    ██ ██    ██ ██ ███    ███",
-                "    ████   ██ ██    ██ ██ ████  ████",
-                "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-                "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-                "    ██   ████   ████   ██ ██      ██",
+                " ▄▄▄▄    ▒█████  ▄▄▄█████▓ ██▓ ▒█████   ███▄    █ ",
+                "▓█████▄ ▒██▒  ██▒▓  ██▒ ▓▒▓██▒▒██▒  ██▒ ██ ▀█   █ ",
+                "▒██▒ ▄██▒██░  ██▒▒ ▓██░ ▒░▒██▒▒██░  ██▒▓██  ▀█ ██▒",
+                "▒██░█▀  ▒██   ██░░ ▓██▓ ░ ░██░▒██   ██░▓██▒  ▐▌██▒",
+                "░▓█  ▀█▓░ ████▓▒░  ▒██▒ ░ ░██░░ ████▓▒░▒██░   ▓██░",
+                "░▒▓███▀▒░ ▒░▒░▒░   ▒ ░░   ░▓  ░ ▒░▒░▒░ ░ ▒░   ▒ ▒ ",
+                "▒░▒   ░   ░ ▒ ▒░     ░     ▒ ░  ░ ▒ ▒░ ░ ░░   ░ ▒░",
+                " ░    ░ ░ ░ ░ ▒    ░       ▒ ░░ ░ ░ ▒     ░   ░ ░ ",
+                " ░          ░ ░            ░      ░ ░           ░ ",
+
         },
 
         -- Default theme configuration
@@ -232,7 +232,6 @@ local config = {
                         --     require("lsp_signature").setup()
                         --   end,
                         -- },
-
                         -- We also support a key value style plugin definition similar to NvChad:
                         -- ["ray-x/lsp_signature.nvim"] = {
                         --   event = "BufRead",
@@ -259,6 +258,7 @@ local config = {
                 treesitter = { -- overrides `require("treesitter").setup(...)`
                         -- ensure_installed = { "lua" },
                 },
+
                 -- use mason-lspconfig to configure LSP installations
                 ["mason-lspconfig"] = { -- overrides `require("mason-lspconfig").setup(...)`
                         -- ensure_installed = { "sumneko_lua" },
