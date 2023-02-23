@@ -247,17 +247,16 @@ local config = {
       opts = function(_, opts)
         -- customize the dashboard header
         opts.section.header.val = {
-          " █████  ███████ ████████ ██████   ██████",
-          "██   ██ ██         ██    ██   ██ ██    ██",
-          "███████ ███████    ██    ██████  ██    ██",
-          "██   ██      ██    ██    ██   ██ ██    ██",
-          "██   ██ ███████    ██    ██   ██  ██████",
-          " ",
-          "    ███    ██ ██    ██ ██ ███    ███",
-          "    ████   ██ ██    ██ ██ ████  ████",
-          "    ██ ██  ██ ██    ██ ██ ██ ████ ██",
-          "    ██  ██ ██  ██  ██  ██ ██  ██  ██",
-          "    ██   ████   ████   ██ ██      ██",
+         " __________________________________________________",
+         "|          _____________________________           |",
+         "| [1] [2]  _____________________________ [_][_][_] |",
+         "| [3] [4]  [_][_][_] [_][_][_][_] [_][_] [_][_][_] |",
+         "| [5] [6]  [][][][][][][][][][][][][][_] [1][2][3] |",
+         "| [7] [8]  [_][][][][][][][][][][][][][] [4][5][6] |",
+         "| [9][10]  [__][][][][][][][][][][][][_] [7][8][9] |",
+         "| [11][12] [___][][][][][][][][][][][__] [__][0][] |",
+         "|          [_][______________][_]                  |",
+         "|__________________________________________________|",
         }
         return opts
       end,
@@ -267,7 +266,6 @@ local config = {
       opts = function(_, config)
         -- config variable is the default configuration table for the setup function call
         -- local null_ls = require "null-ls"
-
         -- Check supported formatters and linters
         -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/formatting
         -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
