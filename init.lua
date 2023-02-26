@@ -10,9 +10,9 @@ local config = {
   -- Configure AstroNvim updates
   updater = {
     remote = "origin", -- remote to use
-    channel = "stable", -- "stable" or "nightly"
+    channel = "nightly", -- "stable" or "nightly"
     version = "latest", -- "latest", tag name, or regex search like "v1.*" to only do updates before v2 (STABLE ONLY)
-    branch = "main", -- branch name (NIGHTLY ONLY)
+    branch = "v3", -- branch name (NIGHTLY ONLY)
     commit = nil, -- commit hash (NIGHTLY ONLY)
     pin_plugins = nil, -- nil, true, false (nil will pin plugins on stable only)
     skip_prompts = false, -- skip prompts about breaking changes
@@ -247,16 +247,16 @@ local config = {
       opts = function(_, opts)
         -- customize the dashboard header
         opts.section.header.val = {
-         " __________________________________________________",
-         "|          _____________________________           |",
-         "| [1] [2]  _____________________________ [_][_][_] |",
-         "| [3] [4]  [_][_][_] [_][_][_][_] [_][_] [_][_][_] |",
-         "| [5] [6]  [][][][][][][][][][][][][][_] [1][2][3] |",
-         "| [7] [8]  [_][][][][][][][][][][][][][] [4][5][6] |",
-         "| [9][10]  [__][][][][][][][][][][][][_] [7][8][9] |",
-         "| [11][12] [___][][][][][][][][][][][__] [__][0][] |",
-         "|          [_][______________][_]                  |",
-         "|__________________________________________________|",
+          " __________________________________________________",
+          "|          _____________________________           |",
+          "| [1] [2]  _____________________________ [_][_][_] |",
+          "| [3] [4]  [_][_][_] [_][_][_][_] [_][_] [_][_][_] |",
+          "| [5] [6]  [][][][][][][][][][][][][][_] [1][2][3] |",
+          "| [7] [8]  [_][][][][][][][][][][][][][] [4][5][6] |",
+          "| [9][10]  [__][][][][][][][][][][][][_] [7][8][9] |",
+          "| [11][12] [___][][][][][][][][][][][__] [__][0][] |",
+          "|          [_][______________][_]                  |",
+          "|__________________________________________________|",
         }
         return opts
       end,
