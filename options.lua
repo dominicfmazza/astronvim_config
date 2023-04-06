@@ -6,8 +6,9 @@ return {
     number = true, -- sets vim.opt.number
     spell = false, -- sets vim.opt.spell
     signcolumn = "auto", -- sets vim.opt.signcolumn to auto
-    wrap = false, -- sets vim.opt.wrap
-    shell = "/usr/bin/fish"
+    wrap = true, -- sets vim.opt.wrap
+    shell = "/usr/bin/fish",
+    smarttab = true
   },
   g = {
     mapleader = " ", -- sets vim.g.mapleader
