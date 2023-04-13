@@ -1,5 +1,6 @@
 -- customize mason plugins
 return {
+  "p00f/clangd_extensions.nvim",
   -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",

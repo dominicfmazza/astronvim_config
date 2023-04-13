@@ -16,5 +16,5 @@ return {
     },
   },
   { "lambdalisue/suda.vim" },
-  { "thibthib18/ros-nvim" }
+  { "thibthib18/ros-nvim" },
 }
