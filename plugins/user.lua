@@ -15,5 +15,6 @@ return {
       contrast = "medium",
     },
   },
-  { "lambdalisue/suda.vim" }
+  { "lambdalisue/suda.vim" },
+  { "thibthib18/ros-nvim" }
 }
