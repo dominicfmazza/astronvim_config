@@ -9,9 +9,11 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
-    { "daschw/leaf.nvim",
-      opts = {
-        contrast = "medium",
-      },
+  {
+    "daschw/leaf.nvim",
+    opts = {
+      contrast = "medium",
     },
+  },
+  { "lambdalisue/suda.vim" }
 }
