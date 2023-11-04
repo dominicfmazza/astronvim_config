@@ -1,27 +1,12 @@
 -- customize mason plugins
 return {
-  "p00f/clangd_extensions.nvim",
-  -- use mason-lspconfig to configure LSP installations
   {
     "williamboman/mason-lspconfig.nvim",
-    -- overrides `require("mason-lspconfig").setup(...)`
-    opts = {
-      ensure_installed = { "clangd", "jedi_language_server", "marksman" },
-    },
   },
-  -- use mason-null-ls to configure Formatters/Linter installation for null-ls sources
   {
     "jay-babu/mason-null-ls.nvim",
-    -- overrides `require("mason-null-ls").setup(...)`
-    opts = {
-      ensure_installed = { "black", "ruff" }
-    },
   },
   {
     "jay-babu/mason-nvim-dap.nvim",
-    -- overrides `require("mason-nvim-dap").setup(...)`
-    opts = {
-      -- ensure_installed = { "python" },
-    },
   },
 }
